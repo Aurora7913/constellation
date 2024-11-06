@@ -13,10 +13,10 @@ libraryDependencies ++= Seq( "edu.berkeley.cs" %% "rocketchip" % "1.6",
     "edu.berkeley.cs" %% "cde" % "1.6",
     "edu.berkeley.cs" %% "rocketmacros" % "1.6",
     "edu.berkeley.cs" %% "chiseltest" % "6.0.0" % "test" ,
-    "org.chipsalliance" %% "chisel" % "6.0.0"
+    "org.chipsalliance" %% "chisel" % "6.5.0"
 )
 
-addCompilerPlugin("org.chipsalliance" % "chisel-plugin" % "6.0.0" cross CrossVersion.full)
+addCompilerPlugin("org.chipsalliance" % "chisel-plugin" % "6.5.0" cross CrossVersion.full)
 
 import Tests._
 
