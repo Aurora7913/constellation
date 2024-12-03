@@ -1,0 +1,11 @@
+package build.constellation
+import mill._, scalalib._
+object `package` extends RootModule with build.MyModule { m =>
+
+  override def ivyDeps = super.ivyDeps() ++ Agg(
+    ivy"edu.berkeley.cs::rocketchip:1.6",
+    ivy"edu.berkeley.cs::cde:1.6",
+    ivy"edu.berkeley.cs::rocketmacros:1.6",
+  )
+
+}
