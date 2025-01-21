@@ -1,6 +1,6 @@
 name := "constellation"
 version := "0.1"
-scalaVersion := "2.13.12"
+scalaVersion := "2.13.14"
 
 scalacOptions ++= Seq(
   "-language:reflectiveCalls",
@@ -12,11 +12,10 @@ scalacOptions ++= Seq(
 libraryDependencies ++= Seq( "edu.berkeley.cs" %% "rocketchip" % "1.6",
     "edu.berkeley.cs" %% "cde" % "1.6",
     "edu.berkeley.cs" %% "rocketmacros" % "1.6",
-    "edu.berkeley.cs" %% "chiseltest" % "6.0.0" % "test" ,
-    "org.chipsalliance" %% "chisel" % "6.5.0"
+    "org.chipsalliance" %% "chisel" % "7.0.0-M2"
 )
 
-addCompilerPlugin("org.chipsalliance" % "chisel-plugin" % "6.5.0" cross CrossVersion.full)
+addCompilerPlugin("org.chipsalliance" % "chisel-plugin" % "7.0.0-M2" cross CrossVersion.full)
 
 import Tests._
 
