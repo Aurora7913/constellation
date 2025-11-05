@@ -1,6 +1,6 @@
 name := "constellation"
 version := "0.1"
-scalaVersion := "2.13.10"
+scalaVersion := "2.13.17"
 
 scalacOptions ++= Seq(
   "-language:reflectiveCalls",
@@ -22,8 +22,7 @@ libraryDependencies ++= (if (standalone) {
   Nil
 })
 
-addCompilerPlugin("edu.berkeley.cs" % "chisel3-plugin"
-  % (if (standalone) "3.5.6" else "3.5.6") cross CrossVersion.full)
+addCompilerPlugin("org.chipsalliance" % "chisel-plugin" % "7.3.0" cross CrossVersion.full)
 
 import Tests._
 
